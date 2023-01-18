@@ -1,25 +1,25 @@
 import React from "react";
-import { Container } from "./HeaderStyles";
 import HeaderLink from "../HeaderLink/HeaderLink";
 import LogoYB from "../../public/LogoYB.svg";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../styles/Home.module.css";
+import { Container } from "../../styles/GlobalComponents";
+import { HeaderContainer } from "./HeaderStyles";
 
 const Header = () => (
   <Container>
-    <Link href="/" rel="noopener noreferrer">
-      <Image
-        src={LogoYB}
-        alt="YB Logo"
-        className={styles.vercelLogo}
-        width={100}
-        height={74}
-        priority
-      />
-    </Link>
-
-    <HeaderLink></HeaderLink>
+    <HeaderContainer>
+      <Link href="/" rel="noopener noreferrer">
+        <Image
+          src={LogoYB}
+          alt="YB Logo"
+          width={100}
+          height={74}
+          priority
+        />
+      </Link>
+      <HeaderLink></HeaderLink>
+    </HeaderContainer>
   </Container>
 );
 

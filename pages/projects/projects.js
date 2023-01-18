@@ -1,34 +1,34 @@
 import React from "react";
-import styles from "../../styles/Home.module.css";
-import { Section, SectionTitle } from "../../styles/GlobalComponents/index";
+import {
+  Section,
+  SmallerSectionTitle,
+} from "../../styles/GlobalComponents/index";
 import { projects } from "../../data/projects";
 import {
   BlogCard,
   CardInfo,
   ExternalLinks,
-  GridContainer,
+  FlexContainer,
   HeaderThree,
-  Hr,
-  Tag,
-  TagList,
   TitleContent,
   UtilityList,
   Img,
-} from "./ProjectsStyles";
+} from "./projectsStyles";
+import { Container } from "../../styles/GlobalComponents/index";
+
 
 const Projects = () => (
-  <main className={styles.main}>
-    <Section nopadding id="projects">
-      <SectionTitle main>Projects</SectionTitle>
-      <GridContainer>
+  <Container>
+    <Section>
+      <FlexContainer>
+      <SmallerSectionTitle>Projects</SmallerSectionTitle>
         {projects.map((project, i) => {
           return (
             <BlogCard key={i}>
               <TitleContent>
-                <HeaderThree title>{project.name}</HeaderThree>
-                <Hr />
+                <HeaderThree>{project.name}</HeaderThree>
               </TitleContent>
-              <CardInfo className="card-info">{project.description}</CardInfo>
+              <CardInfo >{project.description}</CardInfo>
               <UtilityList>
                 <ExternalLinks
                   href={project.source}
@@ -42,9 +42,9 @@ const Projects = () => (
             </BlogCard>
           );
         })}
-      </GridContainer>
+      </FlexContainer>
     </Section>
-  </main>
+  </Container>
 );
 
 export default Projects;

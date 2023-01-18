@@ -2,54 +2,33 @@ import styled from "styled-components";
 import Link from "next/link";
 
 export const Img = styled.img`
-  max-width: 400px;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: visible;
-  @media ${(props) => props.theme.breakpoints.md} {
-    max-width: 250px;
-
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    max-width: 150px;
-  }
+  overflow: hidden;
 `;
 
 export const FlexContainer = styled.section`
-  max-width: 400px;
-  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
-  height: fit-content;
-  @media ${(props) => props.theme.breakpoints.md} {
-    max-width: 350px;
-
-  }
   @media ${(props) => props.theme.breakpoints.sm} {
-    max-width: 250px;
-
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-bottom: 0;
   }
 `;
 export const BlogCard = styled.div`
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 80, 80, 0.5);
+  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
-  max-width: 400px;
-  width: 100%;
-  margin-bottom: 5%;
-
-  @media ${(props) => props.theme.breakpoints.md} {
+  width: 400px;
+  @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  height: fit-content;
   }
 `;
 export const TitleContent = styled.div`
@@ -64,6 +43,24 @@ export const HeaderThree = styled.h3`
   color: rgb(8, 8, 8, 0.5);
   padding: 0.5rem 0;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
+`;
+
+export const Hr = styled.hr`
+  width: 50px;
+  height: 3px;
+  margin: 20px auto;
+  border: 0;
+  background: #d0bb57;
+`;
+
+export const Intro = styled.div`
+  width: 170px;
+  margin: 0 auto;
+  color: #dce3e7;
+  font-family: "Droid Serif", serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 18px;
 `;
 
 export const CardInfo = styled.p`
@@ -87,7 +84,7 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled(Link)`
-  color: #fff;
+  color: #d4c0c0;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
   background: #6b3030;

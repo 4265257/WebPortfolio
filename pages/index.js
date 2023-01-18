@@ -5,7 +5,7 @@ import Sections from "./../components/Sections/Sections";
 import CenterSection from "./../components/CenterSection/CenterSection";
 import CodePic from "../public/codePic.jpg";
 import Image from "next/image";
-
+import { Container } from "../styles/GlobalComponents";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -17,13 +17,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.center}>
+      <Container>
+        <div className={styles.container}>
           <CenterSection></CenterSection>
         </div>
         <Image className={styles.img} src={CodePic} alt="CodePic" priority />
         <Sections></Sections>
-      </main>
+      </Container>
     </>
   );
 }

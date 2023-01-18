@@ -7,12 +7,13 @@ import Icons from "../Icons/Icons";
 const HeaderLink = () => (
   <WebLinksLayout>
     <Icons></Icons>
-    <WebLink href="/">Resume</WebLink>
-    {/* <Document file={Resume}>
-      <Page pageNumber={1} />
-    </Document> */}
+    <WebLink href="/CV.pdf">Resume</WebLink>
   </WebLinksLayout>
 );
 
 export default HeaderLink;
 
+
+{/* <Document file={Resume}>
+  <Page pageNumber={1} />
+</Document> */}

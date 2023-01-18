@@ -1,14 +1,11 @@
 import React from "react";
-import styles from "../../styles/Home.module.css";
+import { Container } from "../../styles/GlobalComponents";
 
 const About = () => (
-<>
+<Container>
 
-    <main className={styles.main}>
 
-hello
-  </main>
-</>
+</Container>
 );
 
 export default About;

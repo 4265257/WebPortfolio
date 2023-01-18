@@ -30,7 +30,7 @@ export const projects = [
     name: "Garden Helper",
     image: "/Final.png",
     description:
-      "reation of a website where users must log in to access their account, leave comments and add items to favorites.",
+      "Creation of a website where users must log in to access their account, leave comments and add items to favorites.",
     technology: "HTML, CSS, React, Node.js, MongoDB, Auth0 API, Cloudinary API",
     id: 3,
     source:"https://github.com/4265257/Final-Project",

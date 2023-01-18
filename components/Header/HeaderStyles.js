@@ -1,20 +1,18 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const HeaderContainer  = styled.section`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+	justify-content: space-between;
+  max-width: 1200px;
   width: 100%;
-  margin: 30px 50px 0 30px ;
+
   @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 100%;
-  margin: 30px 50px 0 30px ;
-
+	justify-content: space-between;
   }
 
 

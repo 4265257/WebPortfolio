@@ -1,32 +1,28 @@
 import React from "react";
 import Link from "next/link";
-import styles from "../../styles/Home.module.css";
-import { Inter } from "@next/font/google";
 import { sections } from "./../../data/sections";
-import { Container } from "./SectionsStyles";
+import { SectionContainer } from './SectionsStyles';
+import { Container } from "../../styles/GlobalComponents";
 
-const inter = Inter({ subsets: ["latin"] });
 
 const Sections = () => {
   return (
-    <div className={styles.flex}>
-      {sections.map((section) => {
+    <Container>
+      <SectionContainer>
+      {sections.map((section, i) => {
         return (
-          <>
-            <Link
-              href={section.href}
-              className={styles.card}
-              rel="noopener noreferrer"
-            >
-              <Container>
-                <h2 className={inter.className}>{section.name}</h2>
-              </Container>
+          <div key={i}>
+            <Link href={section.href} rel="noopener noreferrer">
+              <h2>{section.name}</h2>
             </Link>
-          </>
+          </div>
         );
       })}
-    </div>
+      </SectionContainer>
+    </Container>
   );
 };
 
 export default Sections;
+
+
