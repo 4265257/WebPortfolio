@@ -36,7 +36,7 @@ export const SmallerSectionTitle = styled.h2`
   font-weight: 800;
   font-size: ${(props) => (props.main ? "65px" : "56px")};
   line-height: ${(props) => (props.main ? "72px" : "56px")};
-  width: max-content;
+  width: fit-content;
   max-width: 100%;
   padding-bottom: 30px;
   margin: 0 auto;
@@ -51,9 +51,7 @@ export const SmallerSectionTitle = styled.h2`
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "46px" : "38px")};
     line-height: ${(props) => (props.main ? "56px" : "48px")};
-    width: max-content;
     padding-bottom: 30px;
-    max-width: 80%;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -61,7 +59,6 @@ export const SmallerSectionTitle = styled.h2`
     line-height: 40px;
     font-size: ${(props) => (props.main ? "28px" : "32px")};
     line-height: ${(props) => (props.main ? "32px" : "40px")};
-    max-width: 70%;
     padding-bottom: 30px;
   }
 `;
@@ -69,7 +66,7 @@ export const SectionTitle = styled.h2`
   font-weight: 800;
   font-size: ${(props) => (props.main ? "65px" : "56px")};
   line-height: ${(props) => (props.main ? "72px" : "56px")};
-  width: max-content;
+  width: fit-content;
   max-width: 100%;
   padding-bottom: 30px;
   background: linear-gradient(
@@ -83,9 +80,7 @@ export const SectionTitle = styled.h2`
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "56px" : "48px")};
     line-height: ${(props) => (props.main ? "56px" : "48px")};
-    width: max-content;
     padding-bottom: 10px;
-    max-width: 80%;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -93,7 +88,6 @@ export const SectionTitle = styled.h2`
     line-height: 40px;
     font-size: ${(props) => (props.main ? "28px" : "32px")};
     line-height: ${(props) => (props.main ? "32px" : "40px")};
-    max-width: 70%;
     padding-bottom: 30px;
   }
 `;
@@ -110,9 +104,5 @@ export const SectionText = styled.p`
     font-size: 20px;
     line-height: 32px;
   }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 16px;
-    line-height: 24px;
-  }
-`;
+`
+ 

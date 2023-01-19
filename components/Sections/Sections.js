@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { sections } from "./../../data/sections";
-import { SectionContainer } from './SectionsStyles';
+import { SectionContainer, EachLink } from './SectionsStyles';
 import { Container } from "../../styles/GlobalComponents";
 
 
@@ -11,11 +11,11 @@ const Sections = () => {
       <SectionContainer>
       {sections.map((section, i) => {
         return (
-          <div key={i}>
+          <EachLink key={i}>
             <Link href={section.href} rel="noopener noreferrer">
               <h2>{section.name}</h2>
             </Link>
-          </div>
+          </EachLink>
         );
       })}
       </SectionContainer>

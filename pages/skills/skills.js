@@ -9,10 +9,9 @@ import {
   ListTitle,
   Image,
 } from "./skillsStyles";
-import {
-  SmallerSectionTitle,
-} from "../../styles/GlobalComponents/index";
+import { SmallerSectionTitle } from "../../styles/GlobalComponents/index";
 import { Container } from "../../styles/GlobalComponents/index";
+import CarouselSkills from "../../components/Carousel/Carousel";
 const Skills = () => (
   <Container>
     <Section>
@@ -25,7 +24,6 @@ const Skills = () => (
           <ListContainer>
             <ListTitle>Front-End</ListTitle>
             <ListParagraph>
-              Experiece with <br />
               React.js, HTML, CSS & JavaScript
             </ListParagraph>
           </ListContainer>
@@ -37,13 +35,13 @@ const Skills = () => (
           <ListContainer>
             <ListTitle>Back-End</ListTitle>
             <ListParagraph>
-              Experience with <br />
               Node, RESTful API, Express and MongoDB
             </ListParagraph>
           </ListContainer>
         </ListItem>
       </List>
     </Section>
+    <CarouselSkills></CarouselSkills>
   </Container>
 );
 

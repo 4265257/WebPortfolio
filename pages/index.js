@@ -1,14 +1,12 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Sections from "./../components/Sections/Sections";
 import CenterSection from "./../components/CenterSection/CenterSection";
 import CodePic from "../public/codePic.jpg";
 import Image from "next/image";
 import { Container } from "../styles/GlobalComponents";
-const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -18,12 +16,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Container>
-        <div className={styles.container}>
           <CenterSection></CenterSection>
-        </div>
         <Image className={styles.img} src={CodePic} alt="CodePic" priority />
         <Sections></Sections>
       </Container>
     </>
   );
 }
+
+export default Home  

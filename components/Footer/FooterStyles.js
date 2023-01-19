@@ -2,14 +2,18 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.section`
   max-width: 1200px;
-  width: 100%;
-  padding: 2rem 48px 40px;
+  width: calc(100vw - 32px);
   margin: 1rem auto;
   box-sizing: content-box;
   position: absolute;
    bottom: 0;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0 16px 48px;
+    width: calc(100vw - 32px);
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: calc(100vw - 32px);
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
     width: calc(100vw - 32px);
   }
 `;
