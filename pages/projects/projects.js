@@ -14,7 +14,7 @@ import {
   TitleContent,
   UtilityList,
   Img,
-} from "./projectsStyles";
+} from "../../components/projectsStyles";
 
 const Projects = () => (
   <Container>

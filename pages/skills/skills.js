@@ -8,7 +8,7 @@ import {
   ListParagraph,
   ListTitle,
   Image,
-} from "./skillsStyles";
+} from "../../components/skillsStyles";
 import { SmallerSectionTitle } from "../../styles/GlobalComponents/index";
 import { Container } from "../../styles/GlobalComponents/index";
 import CarouselSkills from "../../components/Carousel/Carousel";

@@ -1,6 +1,6 @@
 import React from "react";
 import { SmallerSectionTitle } from "../../styles/GlobalComponents/index";
-import { AboutSection, FlexContainer, TextArea, ImgBox } from "./aboutStyles";
+import { AboutSection, FlexContainer, TextArea, ImgBox } from "../../components/aboutStyles";
 import { Container } from "../../styles/GlobalComponents/index";
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
