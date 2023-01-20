@@ -11,6 +11,10 @@ export const SectionContainer = styled.div`
 
 export const EachLink = styled.div`
   color: rgba(60, 60, 60, 0.75);
+  transition: 0.3s ease;
+  transition: 0.3s ease;
+  position: relative;
+  left: 0;
   
   &:hover {
     color: #000;

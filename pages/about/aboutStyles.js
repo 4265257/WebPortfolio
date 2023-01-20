@@ -15,6 +15,7 @@ export const AboutSection = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 10%;
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 650px;
@@ -31,32 +32,20 @@ export const FlexContainer = styled.section`
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
- // align-content: flex-start;
- // height: fit-content;
-
 `;
 export const TextArea = styled.div`
   width: 100%;
-  max-width: 30rem;
+  max-width: 40rem;
   padding: 2rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
-margin-bottom: auto;
+  margin-bottom: auto;
 `;
 
 export const ImgBox = styled.div`
-margin-top: auto;
-margin-bottom: auto;
-margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
   margin-right: auto;
-
-/* @media ${props => props.theme.breakpoints.md} {
-  max-width: 350px;
-
-}
-@media ${props => props.theme.breakpoints.sm} {
-  max-width: 350px;
-
-} */
-`
+`;

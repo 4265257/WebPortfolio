@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Container,
   Section,
   SmallerSectionTitle,
 } from "../../styles/GlobalComponents/index";
@@ -14,21 +15,19 @@ import {
   UtilityList,
   Img,
 } from "./projectsStyles";
-import { Container } from "../../styles/GlobalComponents/index";
-
 
 const Projects = () => (
   <Container>
     <Section>
       <FlexContainer>
-      <SmallerSectionTitle>Projects</SmallerSectionTitle>
+        <SmallerSectionTitle>Projects</SmallerSectionTitle>
         {projects.map((project, i) => {
           return (
             <BlogCard key={i}>
               <TitleContent>
                 <HeaderThree>{project.name}</HeaderThree>
               </TitleContent>
-              <CardInfo >{project.description}</CardInfo>
+              <CardInfo>{project.description}</CardInfo>
               <UtilityList>
                 <ExternalLinks
                   href={project.source}
