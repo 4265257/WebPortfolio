@@ -104,8 +104,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: normal) {
   html {
-    color-scheme: dark;
+    color-scheme: normal;
   }
 }
