@@ -5,8 +5,10 @@ export const Img = styled.img`
   max-width: 400px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  overflow: visible;
+  max-height: max-content;
+  //object-fit: cover;
+  //overflow: visible;
+  padding-bottom: 1rem;
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 250px;
 
@@ -25,7 +27,8 @@ export const FlexContainer = styled.section`
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  height: fit-content;
+  display: block;
+  margin: auto;
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 350px;
 

@@ -1,10 +1,9 @@
 import React from "react";
-import { SmallerSectionTitle } from "../../styles/GlobalComponents/index";
-import { AboutSection, FlexContainer, TextArea, ImgBox } from "../../components/aboutStyles";
-import { Container } from "../../styles/GlobalComponents/index";
-import styles from "../../styles/Home.module.css";
+import { SmallerSectionTitle } from "../styles/GlobalComponents/index";
+import { AboutSection, FlexContainer, TextArea, ImgBox } from "../components/aboutStyles";
+import { Container } from "../styles/GlobalComponents/index";
 import Image from "next/image";
-import AvatarYB from "../../public/AvatarYB.svg";
+import AvatarYB from "../public/AvatarYB.svg";
 const About = () => (
   <Container>
     <FlexContainer>

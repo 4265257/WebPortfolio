@@ -3,8 +3,8 @@ import {
   Container,
   Section,
   SmallerSectionTitle,
-} from "../../styles/GlobalComponents/index";
-import { projects } from "../../data/projects";
+} from "../styles/GlobalComponents/index";
+import { projects } from "../data/projects";
 import {
   BlogCard,
   CardInfo,
@@ -14,7 +14,7 @@ import {
   TitleContent,
   UtilityList,
   Img,
-} from "../../components/projectsStyles";
+} from "../components/projectsStyles";
 
 const Projects = () => (
   <Container>

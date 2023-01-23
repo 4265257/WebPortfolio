@@ -8,10 +8,10 @@ import {
   ListParagraph,
   ListTitle,
   Image,
-} from "../../components/skillsStyles";
-import { SmallerSectionTitle } from "../../styles/GlobalComponents/index";
-import { Container } from "../../styles/GlobalComponents/index";
-import CarouselSkills from "../../components/Carousel/Carousel";
+} from "../components/skillsStyles";
+import { SmallerSectionTitle } from "../styles/GlobalComponents/index";
+import { Container } from "../styles/GlobalComponents/index";
+import CarouselSkills from "../components/Carousel/Carousel";
 const Skills = () => (
   <Container>
     <Section>
