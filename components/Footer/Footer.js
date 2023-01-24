@@ -30,7 +30,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>A motived web designer you can trust!</Slogan>
+          <Slogan>A motivated web developer you can trust!</Slogan>
         </CompanyContainer>
         <Icons></Icons>
       </SocialIconsContainer>

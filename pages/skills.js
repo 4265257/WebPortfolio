@@ -18,7 +18,9 @@ const Skills = () => (
       <SmallerSectionTitle>Technologies</SmallerSectionTitle>
       <List>
         <ListItem>
-          <Image>
+          <Image
+          alt=""
+          >
             <DiReact size="6rem" />
           </Image>
           <ListContainer>
@@ -29,7 +31,9 @@ const Skills = () => (
           </ListContainer>
         </ListItem>
         <ListItem>
-          <Image>
+          <Image
+          alt=""
+          >
             <DiFirebase size="6rem" />
           </Image>
           <ListContainer>

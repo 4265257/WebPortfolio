@@ -11,7 +11,6 @@ export const Img = styled.img`
   padding-bottom: 1rem;
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 250px;
-
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     max-width: 150px;
@@ -20,6 +19,7 @@ export const Img = styled.img`
 
 export const FlexContainer = styled.section`
   max-width: 400px;
+  padding: 15px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,28 +31,26 @@ export const FlexContainer = styled.section`
   margin: auto;
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 350px;
-
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     max-width: 250px;
-
   }
 `;
 export const BlogCard = styled.div`
+  padding: 24px;
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 80, 80, 0.5);
-  text-align: center;
+  box-shadow: 1px 2px 5px rgba(1, 2, 5, 0.5);;
   max-width: 400px;
   width: 100%;
   margin-bottom: 5%;
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: fit-content;
   }
 `;
 export const TitleContent = styled.div`
@@ -75,7 +73,7 @@ export const CardInfo = styled.p`
   color: #000;
   font-style: 2rem;
   line-height: 24px;
-  text-align: justify;
+  text-align: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.3rem;
   }
