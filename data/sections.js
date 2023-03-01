@@ -1,14 +1,15 @@
-export const sections = [
-  {
-    name: "About",
-    href: "/about"
-  },
- {
-    name: "Projects",
-    href: "/projects"
-  },
- {
-    name: "Skills",
-    href:"/skills"
-  },
-];
+// export const sections = [
+//   {
+//     name: "About",
+//     href: "/aboutme"
+//   },
+//  {
+//     name: "Projects",
+//     href: "/projectspage"
+//   },
+//  {
+//     name: "Skills",
+//     href:"/skillspage"
+//   },
+  
+// ];

@@ -12,3 +12,8 @@ export const WebLinksLayout = styled.div`
 	align-items: center;
 	align-content: center;
 `;
+
+export const Toggle = styled.div`
+  color: black;
+  padding-right: 10px;
+`;
