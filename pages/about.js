@@ -4,7 +4,9 @@ import { AboutSection, FlexContainer, TextArea, ImgBox } from "../components/abo
 import { Container } from "../styles/GlobalComponents/index";
 import Image from "next/image";
 import AvatarYB from "../public/AvatarYB.svg";
-const About = () => (
+import { getPostsForAbout } from "../lib/api";
+
+const About = ({posts}) => (
   <Container>
     <FlexContainer>
       <SmallerSectionTitle>About</SmallerSectionTitle>
@@ -24,7 +26,7 @@ const About = () => (
           have obtained from my education and previous job experiences while
           also being able to enhance these skills for the future. I have over 7
           years of experience in customer service. This training equipped me
-          with many importants assets such as patience, attentiveness,
+          with many important assets such as patience, attentiveness,
           communication skills and time management.
 
           I am a highly motivated person who enjoys learning about new concepts
@@ -34,7 +36,16 @@ const About = () => (
 
          </AboutSection>
     </FlexContainer>
-  </Container>
+             {/* {posts.map(({ node }) => {
+                            return (
+                                <div  key={node.slug}>
+                                    <h3>{node.title}</h3>
+                                </div>
+                            );
+                        })}  */}
+   </Container>
 );
 
 export default About;
+
+

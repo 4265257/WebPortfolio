@@ -4,7 +4,7 @@ export const AboutSection = styled.div`
   background: linear-gradient(
     336deg,
     rgba(192, 192, 192, 0.8),
-    rgba(0, 0, 0, 0.7) 70.71%
+   rgba(0, 0, 0, 0.7) 70.71%
   );
   color: #fff;
   width: 100%;

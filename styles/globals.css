@@ -40,7 +40,7 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-
+ main
 
 * {
   box-sizing: border-box;
@@ -73,9 +73,11 @@ a {
   text-decoration: none;
 }
 
+
 @media (prefers-color-scheme: light) {
   html {
     color-scheme: light;
+main
   }
 }
 
