@@ -13,7 +13,7 @@ import { gql } from "@apollo/client";
 import { getApolloClient } from "../lib/apollo";
 
 export default function Home({ pages, posts }) {
-  console.log("pages", pages);
+  //console.log("pages", pages);
   return (
     <>
       <Head>

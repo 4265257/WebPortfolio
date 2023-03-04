@@ -8,7 +8,7 @@ import {
 } from "../styles/GlobalComponents";
 
 function Page(page, pages) {
- console.log("pages1", page);
+ //console.log("pages1", page);
 
   return (
     <div>
