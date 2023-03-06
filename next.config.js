@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  pageDataCollectionTimeout: 5000,
   reactStrictMode: true,
   i18n: {
     locales: ["en", "es"],
     defaultLocale: "en",
   },
-  pageDataCollectionTimeout: 5000
 }
 
 // module.exports = {
