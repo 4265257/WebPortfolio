@@ -5,6 +5,7 @@ const nextConfig = {
     locales: ["en", "es"],
     defaultLocale: "en",
   },
+  pageDataCollectionTimeout: 5000
 }
 
 // module.exports = {
