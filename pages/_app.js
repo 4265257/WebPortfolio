@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
     return (
         <>
           <Theme>
-              <Header />
+              {/* <Header /> */}
               <Component {...pageProps} />
               <Footer />
           </Theme>

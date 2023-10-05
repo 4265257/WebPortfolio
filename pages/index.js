@@ -1,7 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import CenterSection from "../components/CenterSection/CenterSection";
-import CodePic from "../public/codePic.jpg";
+/* import CodePic from "../public/codePic.jpg";
+ */
 import Image from "next/image";
 import {
   SectionContainer,
@@ -11,9 +12,15 @@ import {
 import Link from "next/link";
 import { gql } from "@apollo/client";
 import { getApolloClient } from "../lib/apollo";
+import  {BlockRenderer}  from "./../components/BlockRenderer/BlockRenderer";
+import { cleanAndTransformBlocks } from './../utils/cleanAndTransformBlocks';
+//import { cleanAndTransformBlocks } from "./../utils/cleanAndTransformBlocks";
 
-export default function Home({ pages, posts }) {
-  console.log("pages", pages);
+export default function Home({ pages, posts, pageData, blocks }) {
+  //console.log("pageData", pageData);
+//  console.log("page", pages);
+//console.log("block", blocks)
+
   return (
     <>
       <Head>
@@ -23,9 +30,10 @@ export default function Home({ pages, posts }) {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Container>
-        <CenterSection posts={posts}></CenterSection>
-        <Image className={styles.img} src={CodePic} alt="CodePic" priority />
+        {/* <CenterSection posts={posts}></CenterSection> */}
+        {/* <Image className={styles.img} src={CodePic} alt="CodePic" priority /> */}
         {/* <Sections></Sections> */}
+    <BlockRenderer blocks={blocks}/>
         <SectionContainer>
           {" "}
           {pages &&
@@ -50,6 +58,7 @@ export default function Home({ pages, posts }) {
               </li>
             ))}
         </SectionContainer>
+        
       </Container>
     </>
   );
@@ -84,6 +93,22 @@ export async function getStaticProps({ locale }) {
     variables: {
       language,
     },
+  });
+
+  const  pageData  = await apolloClient.query({
+
+    query: gql`
+      query NewQuery {
+        nodeByUri(uri: "/") {
+          ... on Page {
+            id
+            blocks
+          }
+        }
+      }
+    `,
+
+
   });
 
   let pages = data?.data.pages.edges
@@ -148,14 +173,38 @@ export async function getStaticProps({ locale }) {
     ...data?.data.generalSettings,
   };
 
+
+  const blocks = cleanAndTransformBlocks(pageData.data.nodeByUri?.blocks || null)
+  console.log("block", blocks)
   return {
     props: {
+      pageData,
       page,
       pages,
       posts,
+      blocks,
     },
   };
 }
+
+
+
+
+
+
+
+
+
+
+
+// query NewQuery {
+//   nodeByUri(uri: "/") {
+//   ... on Page {
+//     id
+//     blocks
+//   }
+// }
+// }
 
 //import Head from "next/head";
 // import styles from "../styles/Home.module.css";
@@ -170,6 +219,7 @@ export async function getStaticProps({ locale }) {
 // import Link from "next/link";
 // import { Pages_data } from "../context/context";
 // import { useContext } from "react";
+//import { BlockRenderer } from './../components/BlockRenderer/BlockRenderer';
 
 // export default function Home() {
 //   const { } = useContext(Pages_data);
