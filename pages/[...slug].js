@@ -33,13 +33,13 @@ export default function Pages(props) {
       console.log(data);
     
       return {
-        paths: [data.pages.nodes
+        paths: [...data.pages.nodes
           .filter((page) => page.uri !== "/")
-          .map((page) => ({
+           .map((page) => ({
            
-            params: {slug :[`${page.uri.substring(1, page.uri.length-1).split("/")}`]}
-          })),],
-        fallback: "blocking",
+            params: { slug: page.uri.substring(1, page.uri.length-1).split("/") }
+           })),],
+         fallback: "blocking",
       };
     };
    
@@ -148,3 +148,25 @@ export default function Pages(props) {
 //       fallback: 'blocking'
 //     };
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

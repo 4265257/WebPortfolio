@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.section`
+  border-top: 1px solid rgba(60, 60, 60, 0.5);
+  padding: 25px 0 20px;  
   max-width: 1200px;
   width: calc(100vw - 32px);
   margin: 1rem auto;
@@ -47,7 +49,9 @@ export const LinkItem = styled.a`
 `;
 
 export const SocialIconsContainer = styled.div`
-  max-width: 1200px;
+  
+ 
+ max-width: 1200px;
   display: flex;
   justify-content: space-between;
 

@@ -16,18 +16,6 @@ const Footer = () => {
   return (
     <Container>
     <FooterWrapper>
-      <LinkList>
-        <LinkColumn>
-          <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:(438)521-1175">(438)521-1175</LinkItem>
-        </LinkColumn>
-        <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:yarabrek@yarabrek.com">
-            yarabrek123@gmail.com
-          </LinkItem>
-        </LinkColumn>
-      </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>A motivated web developer you can trust!</Slogan>

@@ -4,7 +4,7 @@ export const cleanAndTransformBlocks = (blocksJSON) => {
   const blocks = JSON.parse(JSON.stringify(blocksJSON));
 
   const assignIds = (b) => {
-    b.forEach((block) => {
+    b?.forEach((block) => {
         block.id = uuid();
       if (block.innerBlocks?.lenght) {
         assignIds(block.innerBlocks);
