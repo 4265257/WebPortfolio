@@ -10,8 +10,12 @@ align-items: center;
     margin-right: 10px;
   }
 @media ${props => props.theme.breakpoints.md}{
-  justify-content: center;
-  flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
 }
 
 `;

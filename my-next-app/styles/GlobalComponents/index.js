@@ -1,3 +1,5 @@
+
+
 import styled from "styled-components";
 import Image from "next/image";
 export const Container = styled.section`
@@ -40,12 +42,12 @@ export const SmallerSectionTitle = styled.h2`
   max-width: 100%;
   padding-bottom: 30px;
   margin: 0 auto;
-  background: linear-gradient(
+  /* background: linear-gradient(
     121.57deg,
     #000 18.77%,
     rgba(60, 60, 60, 0.66) 60.15%
   );
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -69,12 +71,12 @@ export const SectionTitle = styled.h2`
   width: fit-content;
   max-width: 100%;
   padding-bottom: 30px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     121.57deg,
     #000 18.77%,
     rgba(60, 60, 60, 0.66) 60.15%
   );
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 
   @media ${(props) => props.theme.breakpoints.md} {
