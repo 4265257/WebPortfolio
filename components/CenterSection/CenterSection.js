@@ -4,11 +4,37 @@ import {
   SectionText,
   SectionTitle,
 } from "./../../styles/GlobalComponents/index";
+import {
+  SectionContainer,
+  //import {getPageStaticProps} from "../../utils/getPageStaticProps"
+  Container,
+  EachLink,
+} from "../styles/globals.js";
+import { BlockRenderer } from "../BlockRenderer/BlockRenderer.js";
+import {MainMenu} from "../MainMenu/MainMenu"
 
 const CenterSection = ({posts}) => {
   return (
     <>
-    <LeftSection>
+    <Container>
+            <MainMenu 
+          mappedMenuItems={mappedMenuItems}
+          />
+          <BlockRenderer 
+          blocks={blocks} 
+          />
+        </Container>
+
+  </>
+
+
+   
+
+    )
+};
+
+export default CenterSection;
+ {/* <LeftSection>
     {posts &&
           posts.length > 0 &&
           posts.map((post) => {
@@ -39,10 +65,5 @@ const CenterSection = ({posts}) => {
         My specialties include HTML, CSS, JavaScript, React and Next.js on the
         front end as well as Node.js, MongoDB, RESTful API and Express on the
         back end.
-      </SectionText> */}
-    </LeftSection>
-  </>
-    )
-};
-
-export default CenterSection;
+      </SectionText> 
+    </LeftSection> */}

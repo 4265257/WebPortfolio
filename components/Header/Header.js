@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Container } from "../../styles/GlobalComponents";
 import { HeaderContainer } from "./HeaderStyles";
 
-import { getFontSizeForHeading, getTextAlign } from "utils/fonts";
+import { getFontSizeForHeading, getTextAlign } from "../../utils/fonts";
 
 const Header = ({ textAlign, content, level = 2 }) => {
   const tag = React.createElement(`h${level}`, {

@@ -18,7 +18,6 @@ import Header from "../components/Header/Header";
 import  mapMainMenuItems  from "./mapMainMenuItems";
 import MainMenu from "../components/MainMenu/MainMenu";
 //import { cleanAndTransformBlocks } from "./../utils/cleanAndTransformBlocks";
-import { async } from "./../pages/[slug] copy";
 
 
 
@@ -60,6 +59,12 @@ export async function getPageStaticProps({ params, locale }, props) {
           nodeByUri(uri: $uri) {
             ... on Page {
               id
+              title
+              blocks
+            }
+            ... on Property {
+              id
+              title
               blocks
             }
           }

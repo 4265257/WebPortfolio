@@ -1,39 +1,3 @@
-// import Head from "next/head";
-// import Link from "next/link";
-// import {
-//   Container,
-//   SmallerSectionTitle,
-//   SectionContainer,
-//   EachLinck
-// } from "../styles/GlobalComponents";
-// import { getApolloClient } from "../lib/apollo";
-// import { gql } from "@apollo/client";
-// import { clientTwo } from "../lib/apollo";
-// import  {BlockRenderer}  from "./../components/BlockRenderer/BlockRenderer";
-// import styles from "../styles/Home.module.css";
-// import CenterSection from "../components/CenterSection/CenterSection";
-// import {
-//   EachLink,
-// } from "../styles/GlobalComponents";
-// import Image from "next/image";
-// import { cleanAndTransformBlocks } from './../utils/cleanAndTransformBlocks';
-// //import { cleanAndTransformBlocks } from "./../utils/cleanAndTransformBlocks";
-// import Avatar from "../public/AvatarMaker.png";
-// import MainMenu from "../components/MainMenu/MainMenu"
-import { getAllPagesWithSlugs, getPageBySlug } from "../lib/api";
-import { getPageStaticProps } from "./../utils/getPageStaticProps";
-import { Page } from "../components/Page/Page";
-
-export default Page;
-export const getStaticProps = getPageStaticProps;
-export async function getStaticPaths() {
-  const pagesWithSlugs = await getAllPagesWithSlugs();
-  return {
-    paths: pagesWithSlugs.edges.map(({ node }) => `/${node.slug}`) || [],
-    fallback: true,
-  };
-}
-
 //const blocks = cleanAndTransformBlocks(pageData.data.nodeByUri?.blocks || null)
 //console.log("pagesWithSlugs", pagesWithSlugs)
 // function Page({page, blocks, title, pages}) {
