@@ -1,17 +1,15 @@
 import { Cover } from "./../Cover/Cover";
 import Header from "../Header/Header";
 import { Paragraph } from "./../Paragraph/Paragraph";
-import { theme } from "./../../theme";
 import { CallToActionButton } from "./../CallToActionButton/CallToActionButton";
 import { Columns } from "./../Columns/Columns";
 import { Column } from "./../Column/Column";
 import Image from "next/image";
 
 export const BlockRenderer = ({ blocks }) => {
- // console.log("blocks!", blocks);
+
 
   return blocks?.map((block) => {
-     //console.log("blocks!!!", block.attributes.url);
     switch (block.name) {
       case "acf/ctabutton": {
         return (
