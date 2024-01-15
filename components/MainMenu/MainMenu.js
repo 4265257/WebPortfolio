@@ -1,12 +1,5 @@
 import React from "react";
 import {
-  CompanyContainer,
-  FooterWrapper,
-  LinkColumn,
-  LinkItem,
-  LinkList,
-  LinkTitle,
-  Slogan,
   SocialIconsContainer,
 } from "../Footer/FooterStyles";
 import Icons from "./../Icons/Icons";
@@ -23,7 +16,7 @@ export default function MainMenu({ mappedMenuItems }) {
         {(mappedMenuItems || []).map((item) => (
           <div
             key={item.id}
-            className="hover:bg-slate-700  text-white cursor-pinter relative group"
+            className="hover:bg-slate-700 rounded-[12px] text-white cursor-pinter relative group"
           >
             <Link href={item.destination} className="p-5 block">{item.label}</Link>
           </div>
